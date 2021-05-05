@@ -1,6 +1,6 @@
-import 'package:applrn1904/constants.dart';
-import 'package:applrn1904/screens/home/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:plant_app/constants.dart';
+import 'package:plant_app/screens/home/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Plant Application',
+      title: 'Plant App',
       theme: ThemeData(
         scaffoldBackgroundColor: kBackgroundColor,
         primaryColor: kPrimaryColor,
