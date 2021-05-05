@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:plant_app/constants.dart';
+import 'package:applrn1904/constants.dart';
 
 import 'image_and_icons.dart';
 import 'title_and_price.dart';
@@ -19,22 +19,19 @@ class Body extends StatelessWidget {
               SizedBox(
                 width: size.width / 2,
                 height: 84,
-                child: FlatButton(
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.only(
-                      topRight: Radius.circular(20),
-                    ),
-                  ),
-                  color: kPrimaryColor,
-                  onPressed: () {},
-                  child: Text(
-                    "Buy Now",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                    ),
-                  ),
-                ),
+                child: TextButton(
+                    child: Text('Angelica'),
+                    style: TextButton.styleFrom(
+                        backgroundColor: Colors.red,
+                        primary: Colors.white,
+                        onSurface: Colors.grey,
+                        textStyle: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          fontSize: 20,
+                        )),
+                    onPressed: () {
+                      print('Pressed');
+                    }),
               ),
               Expanded(
                 child: FlatButton(
